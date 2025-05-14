@@ -168,7 +168,7 @@ A **Routing Table** lists paths for data packets to reach their destinations. Ex
 - **Public IP**: Visible on the Internet, assigned by ISPs. 🌍
 - **Private IP**: Used within local networks. 🏠
 
-![Public vs Private IPs](https://upload.wikimedia.org/wikipedia/commons/e/ea/IP_address_ranges.png)
+![Public vs Private IPs](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/IP_address_ranges.png)
 
 ---
 
@@ -176,7 +176,7 @@ A **Routing Table** lists paths for data packets to reach their destinations. Ex
 - **Purpose**: Translates private IPs to public IPs for Internet communication. 🔄
 - **Example**: Your home router uses NAT to allow all devices to share one public IP.
 
-![NAT Example](https://upload.wikimedia.org/wikipedia/commons/6/66/Network_Address_Translation.svg)
+![NAT Example](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/Network_Address_Translation.png)
 
 ---
 
@@ -184,7 +184,7 @@ A **Routing Table** lists paths for data packets to reach their destinations. Ex
 - **Purpose**: Protocol for transferring web pages and data over the Internet. 🌐
 - **Example**: Browsing websites like `https://github.com`.
 
-![HTTP Request Flow](https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_protocol_operations.svg)
+![HTTP Request Flow](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/HTTP_protocol_operations.png)
 
 ---
 
@@ -196,7 +196,7 @@ The **OSI (Open Systems Interconnection) Model** is a conceptual framework that 
 
 ## OSI Model Diagram 🖼️
 
-![OSI Model Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Osi-model-jb.svg/1200px-Osi-model-jb.svg.png)
+![OSI Model Diagram](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/OSI_Model_Diagram.png)
 
 ---
 
