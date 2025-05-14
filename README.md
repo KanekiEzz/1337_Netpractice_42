@@ -20,7 +20,7 @@
 
 A **Network** in computing refers to a group of two or more devices that can communicate with each other, enabling the **sending** and **receiving** of data (or *packets*). 🌎
 
-![Network Types](https://upload.wikimedia.org/wikipedia/commons/9/94/Network-diagram-basic.svg)
+![Network Types](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/Network-diagram-basic.png)
 
 The **Internet** is the largest example of a network, connecting devices worldwide for seamless data sharing. 💻🔗
 
@@ -34,7 +34,7 @@ Networks can be categorized as:
 
 To enable seamless communication over networks, we use protocols like **TCP (Transmission Control Protocol)** and **IP (Internet Protocol)**. 🛠️
 
-![TCP/IP Layers](https://upload.wikimedia.org/wikipedia/commons/3/37/TCP-IP_Model.svg)
+![TCP/IP Layers](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/TCP-IP_Model.png)
 
 - **TCP**: Breaks data into packets, sends them, and reassembles them at the destination. 📦
 - **IP**: Assigns unique addresses to devices for identification and data routing. 🔢
@@ -45,7 +45,7 @@ To enable seamless communication over networks, we use protocols like **TCP (Tra
 
 An **IPv4 address** is a 32-bit number divided into four blocks (e.g., `192.168.0.1`). 🧮
 
-![Subnet Mask Example](https://upload.wikimedia.org/wikipedia/commons/4/4f/IPv4_subnetting.svg)
+![Subnet Mask Example](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/IPv4_subnetting.png)
 
 We use **Subnet Masks** to divide the address into:
 - **Network Address**: Identifies the network.
@@ -78,7 +78,7 @@ Devices are connected through:
 
 A **Switch** distributes packets among devices within the same network (LAN). It lacks external communication interfaces. 🖧
 
-![Switch Example](https://upload.wikimedia.org/wikipedia/commons/1/1e/Network_switches.png)
+![Switch Example](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/Network_switches.png)
 
 ---
 
@@ -86,7 +86,7 @@ A **Switch** distributes packets among devices within the same network (LAN). It
 
 A **Router** connects multiple networks, ensuring no IP range overlaps between connected networks. 🌐
 
-![Router Example](https://upload.wikimedia.org/wikipedia/commons/3/3e/Router.png)
+![Router Example](https://github.com/KanekiEzz/1337_Netpractice_42/blob/main/imgs/Router.png)
 
 ---
 
