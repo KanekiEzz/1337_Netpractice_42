@@ -1,19 +1,104 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/netpractice.css">
-    <script src="js/intro.js"></script>
-    <meta charset="UTF-8">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1337 NetPractice</title>
+  <link rel="stylesheet" href="css/netpractice.css">
+  <style>
+    /* 🌈 Animated Background & Modern UI */
+    :root {
+      --color1: #19183B; /* Deep Navy */
+      --color2: #708993; /* Slate Blue */
+      --color3: #A1C2BD; /* Soft Aqua */
+      --color4: #E7F2EF; /* Light Mint */
+      --color5: #666666; /* Light Mint */
+    }
 
-  <body>
-    <div class='intro_div'>
-      Welcome to 42's NetPractice !<br />
-      Please enter your intranet login (the moulinette will use it to know your own configuration) : <br />
-      <input id='input_login' type=text size=8><br />
-      Or leave empty for a defense : 3 random level from 6 to 10 will be offered to be solved in 15 minutes.<br />
-      <span class='footnote'>Note: the architecture and addresses used in the following levels are fictionnous and are not connected to real configurations.</span><br />
-      <input type=button value="Start !" onclick='save_login();'>
-    </div>
-    <script>document.getElementById('input_login').value = load_login();</script>
-  </body>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color4);
+      background: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color5));
+      background-size: 400% 400%;
+      animation: gradientAnimation 20s ease infinite;
+      overflow: hidden;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .intro_div {
+      background: rgba(25, 24, 59, 0.6);
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s ease;
+      max-width: 500px;
+    }
+
+    .intro_div:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    }
+
+    input[type="text"] {
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--color3);
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    input[type="button"] {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--color3);
+      color: var(--color1);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="button"]:hover {
+      background-color: var(--color2);
+      transform: translateY(-2px);
+    }
+
+    .footnote {
+      display: block;
+      font-size: 0.75rem;
+      font-style: italic;
+      color: var(--color3);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro_div">
+    Welcome to 1337!<br>
+    Please enter your intranet login (the moulinette will use it to know your configuration):<br>
+    <input id="input_login" type="text" size="8"><br>
+    Or leave empty for a defense: 3 random levels from 6 to 10 will be offered to be solved in 15 minutes.<br>
+    <span class="footnote">Note: the architecture and addresses used in the following levels are fictional and are not connected to real configurations.</span><br><br>
+    <input type="button" value="Start!" onclick="save_login();">
+  </div>
+
+  <script src="js/intro.js"></script>
+  <script>
+    // Load saved login
+    document.getElementById('input_login').value = load_login();
+  </script>
+</body>
 </html>

@@ -1,114 +1,190 @@
+/* 🌐 Net Practice CSS — Modernized with Custom Palette */
 
-/* net Practice CSS */
-/* Warning : some parameters are set / modified by script */
+/* 🌈 Animated Background using your palette */
+:root {
+    --color1: #19183B;
+    /* Deep Navy */
+    --color2: #708993;
+    /* Slate Blue */
+    --color3: #A1C2BD;
+    /* Soft Aqua */
+    --color4: #E7F2EF;
+    /* Light Mint */
+    --color5: #666666;
+    /* Light Mint */
 
-
-body {
-    font-family: sans-serif;
-    padding:0px;
-    margin:0px;
-    background-image:url("../img/site42-bg.gif");
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--color4);
+
+    /* Animated gradient background */
+    background: linear-gradient(270deg, var(--color1), var(--color2), var(--color3), var(--color5));
+    background-size: 800% 800%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional: content container with glass effect */
+.container {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin: 10% auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(25, 24, 59, 0.4);
+    /* semi-transparent overlay */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-6px);
+}
+
+h1,
+h2 {
+    color: var(--color4);
+}
+
+p {
+    color: var(--color3);
+}
 
 div {
     box-sizing: border-box;
 }
 
-
-
-/* message box in index.html */
-
+/* 🟣 message box */
 .intro_div {
-    background-color: #00AAAA;
-    border: 5px solid #00AAAA;
-    border-radius: 5px;
-    padding:10px;
-    width:50%;
-    margin:auto;
-    margin-top: 25%;
+    background-color: rgba(112, 137, 147, 0.3);
+    border: 2px solid var(--color3);
+    border-radius: 12px;
+    padding: 24px;
+    width: 50%;
+    margin: 18% auto 0 auto;
     text-align: center;
+    color: var(--color4);
+    box-shadow: 0 4px 20px rgba(25, 24, 59, 0.4);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.intro_div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(25, 24, 59, 0.6);
+}
 
-/* goals div */
+/* 🧭 goals section */
 .goals_div {
-    background-color: #00AAAA;
-    width:100%;
-    border:5px solid #00AAAA;
-    border-radius:5px;
-    padding: 5px;
+    background-color: rgba(25, 24, 59, 0.6);
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    color: var(--color3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .goals_div h2 {
-    margin:5px;
-    font-style:italic;
+    margin: 6px;
+    font-style: italic;
+    color: var(--color4);
 }
 
-
-/* SVG layer */
+/* 🧩 SVG layer */
 .svg_layer {
-    z-index:-4;
-    position:absolute;
-    top:0px;
-    left:0px;
+    z-index: -4;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-
-/* logs window */
+/* 🪟 logs window */
 .logs_div {
-    background-color: #FFAAAA;
-    border:3px solid #FFAAAA;
-    border-radius:3px;
-    position:fixed;
-    bottom:0px;
-    right:0px;
-    width:250px;
-    height:200px;
-    font-size:70%;
-    overflow-y: scroll;
+    background-color: rgba(25, 24, 59, 0.85);
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 260px;
+    height: 200px;
+    font-size: 0.8rem;
+    overflow-y: auto;
+    color: var(--color3);
+    padding: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
 }
 
-
-/* host div (image) */
+/* 🧠 host image */
 .host_div {
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* will be updated by script : position, top, left, width, height, background-image */
 }
 
-
-/* host info (name, route) div */
+/* 🧩 host info */
 .host_info_div {
     min-width: 170px;
     min-height: 50px;
-    background-color:rgba(150, 150, 255, 0.9);
-    border: 3px solid rgba(150, 150, 255, 0.9);
-    border-radius: 3px;
-    /* will be updated by script : position, top, left */
+    background-color: rgba(161, 194, 189, 0.15);
+    border: 2px solid rgba(161, 194, 189, 0.5);
+    border-radius: 8px;
+    color: var(--color4);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(25, 24, 59, 0.4);
 }
 
 .host_info_div table {
-    text-align:center;
+    text-align: center;
+    width: 100%;
 }
 
 .if_tab {
     border-collapse: collapse;
 }
 
-/* interface div */
+/* 🧩 interface */
 .itf_div {
     min-width: 176px;
     height: 70px;
-    background-color: rgba(150, 150, 150, 0.9);
-    border: 3px solid rgba(150, 150, 150, 0.9);
-    border-radius: 3px;
-    /* will be updated by script : position, top, left */
+    background-color: rgba(112, 137, 147, 0.25);
+    border: 1px solid rgba(112, 137, 147, 0.6);
+    border-radius: 8px;
+    color: var(--color4);
+    box-shadow: 0 4px 10px rgba(25, 24, 59, 0.4);
 }
 
-/* intro footnote */
+/* ✍️ footnote */
 .footnote {
-    font-size:70%;
-    font-style:italic;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--color3);
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.8;
 }
